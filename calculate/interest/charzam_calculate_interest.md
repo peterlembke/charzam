@@ -6,6 +6,8 @@ In your home budget you might want to know how much you will get in interest eac
 You can not just divide the yearly interest with 12 and add that each month because then you get interest on the interest.
 This tool will calculate the monthly interest for you. It handles the interest on the interest.
 
+[CharZam](../../README.md) >> [Calculate](../charzam_calculate.md) >> [Interest](#charzam-calculate-interest)
+
 ## Usage
 
 Let's say you have 3.5 % yearly interest, and you save 1000 SEK each month.

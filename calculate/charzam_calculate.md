@@ -2,6 +2,8 @@
 
 Small tools that help you calculate things like interest rates.
 
+[CharZam](../README.md) >> [Calculate](#charzam-calculate) >> [Interest](interest/charzam_calculate_interest.md)
+
 ## Interest
 
 ![Interest logo](asset/icon/icon.png)
@@ -9,6 +11,8 @@ Small tools that help you calculate things like interest rates.
 In your home budget you might want to know how much you will get in interest each month.
 You can not just divide the yearly interest with 12 and add that each month because then you get interest on the interest.
 This tool will calculate the monthly interest for you. It handles the interest on the interest.
+
+See details in [Interest](interest/charzam_calculate_interest.md).
 
 # Future
 

@@ -1,0 +1,33 @@
+{
+    "version": {
+        "date": "2021-08-28 22:07:03",
+        "plugin": "charzam_calculate",
+        "data_checksum": "d3d207c732a704126fb48ec80dc23c12",
+        "language": "en",
+        "language_name": "english",
+        "country": "GB",
+        "country_name": "Great Britain",
+        "file_type": "translate_file"
+    },
+    "launcher": {
+        "title": "CharZam Calculate",
+        "description": "Calculate in areas like economy, interest, etc."
+    },
+    "data": {
+        "charzam_calculate": {
+            "INSTRUCTIONS_KEY": "Instructions",
+            "USE_THE_MENU._KEY": "Use the menu."
+        },
+        "charzam_calculate_menu": {
+            "GET_A_UNIQUE_IDENTIFIER_UUID_KEY": "Get a unique identifier uuid",
+            "CALCULATE_CHECKSUM_KEY": "Calculate checksum",
+            "COMPRESS_DATA_KEY": "Compress data",
+            "ENCRYPT\/DECRYPT_TEXT_KEY": "Encrypt\/decrypt text",
+            "MESSAGES_TOOL_KEY": "Messages tool",
+            "GET_CURRENT_TIME_KEY": "Get current time",
+            "GET_RANDOM_NUMBERS_KEY": "Get random numbers",
+            "GET_PASSWORDS_KEY": "Get passwords",
+            "RUN_TEST_CALLS_KEY": "Run test calls"
+        }
+    }
+}

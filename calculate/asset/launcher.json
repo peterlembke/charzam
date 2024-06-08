@@ -1,0 +1,11 @@
+{
+    "plugin": "charzam_calculate",
+    "title": "CharZam Calculate",
+    "description": "Calculate in areas like economy, interest, etc.",
+    "keywords": "calculate,interest",
+    "uses": [
+        "charzam_calculate_menu",
+        "infohub_rendermenu",
+        "charzam_calculate_interest"
+    ]
+}

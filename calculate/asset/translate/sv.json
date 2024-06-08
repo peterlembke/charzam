@@ -1,0 +1,22 @@
+{
+    "version": {
+        "date": "2021-08-28 22:07:03",
+        "plugin": "charzam_calculate",
+        "data_checksum": "d3d207c732a704126fb48ec80dc23c12",
+        "language": "sv",
+        "language_name": "swedish",
+        "country": "SE",
+        "country_name": "Sweden",
+        "file_type": "translate_file"
+    },
+    "launcher": {
+        "title": "CharZam Kalkylera",
+        "description": "Kalkylera inom områden som ekonomi, ränta, etc."
+    },
+    "data": {
+        "charzam_calculate": {
+            "INSTRUCTIONS_KEY": "Instructions",
+            "USE_THE_MENU._KEY": "Use the menu."
+        }
+    }
+}

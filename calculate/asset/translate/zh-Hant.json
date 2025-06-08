@@ -1,0 +1,48 @@
+{
+    "version": {
+        "date": "2025-06-08 17:58:50",
+        "plugin": "charzam_calculate",
+        "data_checksum": "108d803a12545b21b544063f1fb431ce",
+        "language": "zh-Hant",
+        "language_name": "Chinese (traditional)",
+        "language_name_local": "中文( 傳統 )",
+        "country": "",
+        "country_name": "",
+        "file_type": "translate_file",
+        "has_manual_translations": "false"
+    },
+    "launcher": {
+        "title": "計算利率",
+        "description": "計算如經濟、利率等."
+    },
+    "data": {
+        "charzam_calculate": {
+            "INSTRUCTIONS_KEY": "指令",
+            "USE_THE_MENU._KEY": "用菜單."
+        },
+        "charzam_calculate_interest": {
+            "YOU_CAN_CALCULATE_THE_MONTHLY_INTEREST_RATE_ON_YOUR_SAVINGS_FROM_THE_YEARLY_INTEREST_RATE._KEY": "您可以從年利率中計算您存款的月利率 .",
+            "YOU_CAN_USE_THE_RESULT_IN_YOUR_BUDGET_TO_ADD_BANK_INTEREST_ON_YOUR_SAVINGS_EACH_MONTH._KEY": "你可以用你的預算結果 每月增加銀行存款利息.",
+            "THAT_SOLVES_THE_PROBLEM_WITH_INTEREST_RATE_ON_INTEREST_RATE._KEY": "這解決了利率的問題.",
+            "IF_YOU_CALCULATE_MONTHLY_LOAN_INTEREST_RATES_THEN_DO_NOT_USE_THIS_TOOL._KEY": "如果計算月利率, 請不要使用此工具 .",
+            "FOR_LOANS_YOU_DIVIDE_THE_YEARLY_INTEREST_RATE_BY_12._KEY": "贷款的年利率除以12.",
+            "DIFFERENCE_IS_THAT_LOANS_DO_NOT_HAVE_INTEREST_RATE_ON_INTEREST_RATE._KEY": "不同的是,贷款没有利率.",
+            "INTEREST_RATE_KEY": "利率",
+            "CLICK_FOR_INSTRUCTIONS..._KEY": "點擊指令...",
+            "CALCULATE_MONTHLY_INTEREST_RATE_ON_YOUR_SAVINGS_KEY": "計算储蓄的月利率",
+            "YEARLY_INTEREST_RATE_KEY": "年利率",
+            "CALCULATE_KEY": "計算",
+            "MONTHLY_INTEREST_RATE_PERCENT_KEY": "月利率百分比",
+            "MONTHLY_INTEREST_RATE_PERCENT_WITH_TWO_DECIMALS_KEY": "月利率百分比,小數點二",
+            "MONTHLY_INTEREST_RATE_DECIMAL_KEY": "月利率",
+            "MONTHLY_INTEREST_RATE_DECIMAL_WITH_ALL_DECIMALS_FOR_YOUR_BUGDET_KEY": "您的bugdet 的月利率與所有小數點",
+            "CALCULATION_OK_KEY": "計算好",
+            "CALCULATION_VERIFIED_OK_KEY": "計算已驗證",
+            "CALCULATION_FAILED_KEY": "計算失敗",
+            "CALCULATION_FAILED_VERIFICATION_KEY": "計算失敗的驗證"
+        },
+        "charzam_calculate_menu": {
+            "MONTHLY_INTEREST_RATE_KEY": "月利率"
+        }
+    }
+}

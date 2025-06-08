@@ -1,7 +1,7 @@
 {
     "plugin": "charzam_calculate",
-    "title": "CharZam Calculate",
-    "description": "Calculate in areas like economy, interest, etc.",
+    "title": "Calculate interest rates",
+    "description": "Calculate in areas like economy, interest rates, etc.",
     "keywords": "calculate,interest",
     "uses": [
         "charzam_calculate_menu",

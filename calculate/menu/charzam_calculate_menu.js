@@ -92,7 +92,7 @@ function charzam_calculate_menu() {
                                 'checksum': {
                                     'alias': 'interest_link',
                                     'event_data': 'interest',
-                                    'button_label': _Translate('MONTHLY_INTEREST'),
+                                    'button_label': _Translate('MONTHLY_INTEREST_RATE'),
                                     'to_plugin': 'charzam_calculate',
                                     'to_function': 'click_menu',
                                 },

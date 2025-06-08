@@ -78,10 +78,10 @@ function charzam_calculate_interest() {
 
             $text[0] = _Translate('YOU_CAN_CALCULATE_THE_MONTHLY_INTEREST_RATE_ON_YOUR_SAVINGS_FROM_THE_YEARLY_INTEREST_RATE.');
             $text[1] = _Translate('YOU_CAN_USE_THE_RESULT_IN_YOUR_BUDGET_TO_ADD_BANK_INTEREST_ON_YOUR_SAVINGS_EACH_MONTH.');
-            $text[1] = _Translate('THAT_SOLVES_THE_PROBLEM_WITH_INTEREST_ON_INTEREST.');
-            $text[2] = _Translate('IF_YOU_CALCULATE_MONTHLY_LOAN_INTEREST_THEN_DO_NOT_USE_THIS_TOOL.');
+            $text[1] = _Translate('THAT_SOLVES_THE_PROBLEM_WITH_INTEREST_RATE_ON_INTEREST_RATE.');
+            $text[2] = _Translate('IF_YOU_CALCULATE_MONTHLY_LOAN_INTEREST_RATES_THEN_DO_NOT_USE_THIS_TOOL.');
             $text[3] = _Translate('FOR_LOANS_YOU_DIVIDE_THE_YEARLY_INTEREST_RATE_BY_12.');
-            $text[4] = _Translate('DIFFERENCE_IS_THAT_LOANS_DO_NOT_HAVE_INTEREST_ON_INTEREST.');
+            $text[4] = _Translate('DIFFERENCE_IS_THAT_LOANS_DO_NOT_HAVE_INTEREST_RATE_ON_INTEREST_RATE.');
 
             return _SubCall({
                 'to': {
@@ -94,7 +94,7 @@ function charzam_calculate_interest() {
                         'titel': {
                             'type': 'common',
                             'subtype': 'value',
-                            'data': _Translate('INTEREST')
+                            'data': _Translate('INTEREST_RATE')
                         },
                         'my_presentation_box': {
                             'plugin': 'infohub_rendermajor',
@@ -112,7 +112,7 @@ function charzam_calculate_interest() {
                             'plugin': 'infohub_renderform',
                             'type': 'form',
                             'content': '[my_textbox_input]<br>[my_submit_button]<br>[my_textbox_output_percent]<br>[my_textbox_output_decimal]<br>[my_status]',
-                            'label': _Translate('INTEREST'),
+                            'label': _Translate('INTEREST_RATE'),
                             'description': _Translate('CALCULATE_MONTHLY_INTEREST_RATE_ON_YOUR_SAVINGS'),
                         },
                         'my_textbox_input': {

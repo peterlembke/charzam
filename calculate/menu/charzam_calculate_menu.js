@@ -1,19 +1,13 @@
 /**
- Copyright (C) 2010- Peter Lembke, CharZam soft
- the program is distributed under the terms of the GNU General Public License
-
- InfoHub is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
-
- InfoHub is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with InfoHub.  If not, see <https://www.gnu.org/licenses/>.'
+ * charzam_calculate_menu
+ * Render a menu for charzam_calculate
+ *
+ * @package     Infohub
+ * @subpackage  charzam_calculate_menu
+ * @since       2018-04-15
+ * @author      Peter Lembke <info@infohub.se>
+ * @license     GPL-3.0-or-later
+ * @copyright   Copyright (C) 2010- Peter Lembke
  */
 function charzam_calculate_menu() {
 
@@ -57,6 +51,31 @@ function charzam_calculate_menu() {
      */
     $functions.push('create');
     const create = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['create'] = {
+                description: 'Get instructions and create the message to InfoHub View',
+                parameters: {
+                    'subtype': {
+                        type: 'string',
+                        default: 'menu',
+                        description: 'Subtype to create'
+                    },
+                    'parent_box_id': {
+                        type: 'string',
+                        default: '',
+                        description: 'Parent box ID'
+                    },
+                    'translations': {
+                        type: 'array',
+                        default: {},
+                        description: 'Translation data'
+                    }
+                }
+            };
+            return [];
+        }
+
         const $default = {
             'subtype': 'menu',
             'parent_box_id': '',

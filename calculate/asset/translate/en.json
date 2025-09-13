@@ -35,7 +35,7 @@
             "MONTHLY_INTEREST_RATE_PERCENT_KEY": "Monthly interest rate percent",
             "MONTHLY_INTEREST_RATE_PERCENT_WITH_TWO_DECIMALS_KEY": "Monthly interest rate percent with two decimals",
             "MONTHLY_INTEREST_RATE_DECIMAL_KEY": "Monthly interest rate decimal",
-            "MONTHLY_INTEREST_RATE_DECIMAL_WITH_ALL_DECIMALS_FOR_YOUR_BUGDET_KEY": "Monthly interest rate decimal with all decimals for your bugdet",
+            "MONTHLY_INTEREST_RATE_DECIMAL_WITH_ALL_DECIMALS_FOR_YOUR_BUDGET_KEY": "Monthly interest rate decimal with all decimals for your bugdet",
             "CALCULATION_OK_KEY": "Calculation ok",
             "CALCULATION_VERIFIED_OK_KEY": "Calculation verified ok",
             "CALCULATION_FAILED_KEY": "Calculation failed",

@@ -1,19 +1,13 @@
 /**
- Copyright (C) 2010- Peter Lembke, CharZam soft
- the program is distributed under the terms of the GNU General Public License
-
- InfoHub is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
-
- InfoHub is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with InfoHub.  If not, see <https://www.gnu.org/licenses/>.'
+ * Tools collection
+ * Collection of tools that show you what Infohub can do
+ *
+ * @package     Infohub
+ * @subpackage  charzam_calculate
+ * @since       2018-07-26
+ * @author      Peter Lembke <info@infohub.se>
+ * @license     GPL-3.0-or-later
+ * @copyright   Copyright (C) 2010- Peter Lembke
  */
 function charzam_calculate() {
 
@@ -83,6 +77,21 @@ function charzam_calculate() {
      */
     $functions.push('setup_gui');
     const setup_gui = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['setup_gui'] = {
+                description: 'Set up the Workbench Graphical User Interface',
+                parameters: {
+                    'box_id': {
+                        type: 'string',
+                        default: '',
+                        description: 'The box id to use'
+                    }
+                }
+            };
+            return [];
+        }
+
         const $default = {
             'box_id': '',
             'step': 'step_start',
@@ -234,6 +243,26 @@ function charzam_calculate() {
      */
     $functions.push('click_menu');
     const click_menu = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['click_menu'] = {
+                description: 'Handle the menu clicks',
+                parameters: {
+                    'event_data': {
+                        type: 'string',
+                        default: '',
+                        description: 'Event data from the menu click'
+                    },
+                    'parent_box_id': {
+                        type: 'string',
+                        default: '',
+                        description: 'Parent box ID'
+                    }
+                }
+            };
+            return [];
+        }
+
         const $default = {
             'step': 'step_start',
             'event_data': '',
@@ -275,6 +304,66 @@ function charzam_calculate() {
      */
     $functions.push('click');
     const click = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['click'] = {
+                description: 'All clicks except the menu goes here and are distributed to the right child and the right click function',
+                parameters: {
+                    'event_data': {
+                        type: 'string',
+                        default: '',
+                        description: 'childName|clickName|RestOfEventData'
+                    },
+                    'level': {
+                        type: 'string',
+                        default: '',
+                        description: 'For the advanced list'
+                    },
+                    'value': {
+                        type: 'string',
+                        default: '',
+                        description: 'Selected option in select lists'
+                    },
+                    'box_id': {
+                        type: 'string',
+                        default: '',
+                        description: 'The box ID'
+                    },
+                    'type': {
+                        type: 'string',
+                        default: '',
+                        description: 'Type of the element'
+                    },
+                    'event_type': {
+                        type: 'string',
+                        default: '',
+                        description: 'Type of the event'
+                    },
+                    'affect_alias': {
+                        type: 'string',
+                        default: '',
+                        description: 'Alias to affect'
+                    },
+                    'affect_plugin': {
+                        type: 'string',
+                        default: '',
+                        description: 'Plugin to affect'
+                    },
+                    'affect_function': {
+                        type: 'string',
+                        default: '',
+                        description: 'Function to affect'
+                    },
+                    'form_data': {
+                        type: 'array',
+                        default: {},
+                        description: 'Form data'
+                    }
+                }
+            };
+            return [];
+        }
+
         const $default = {
             'event_data': '', // childName|clickName|RestOfEventData
             'level': '', // For the advanced list
@@ -355,6 +444,30 @@ function charzam_calculate() {
      */
     $functions.push('call_server');
     const call_server = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['call_server'] = {
+                description: 'Function so the children can call the server',
+                parameters: {
+                    'from_plugin': {
+                        type: 'array',
+                        default: {
+                            'node': '',
+                            'plugin': '',
+                            'function': ''
+                        },
+                        description: 'Information about the calling plugin'
+                    },
+                    'send_data': {
+                        type: 'array',
+                        default: {},
+                        description: 'Data to send to the server'
+                    }
+                }
+            };
+            return [];
+        }
+
         const $default = {
             'step': 'step_start',
             'from_plugin': {
@@ -395,6 +508,30 @@ function charzam_calculate() {
      */
     $functions.push('get_available_options');
     const get_available_options = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['get_available_options'] = {
+                description: 'Function so the children can call the server',
+                parameters: {
+                    'from_plugin': {
+                        type: 'array',
+                        default: {
+                            'node': '',
+                            'plugin': '',
+                            'function': ''
+                        },
+                        description: 'Information about the calling plugin'
+                    },
+                    'config': {
+                        type: 'array',
+                        default: {},
+                        description: 'Configuration data'
+                    }
+                }
+            };
+            return [];
+        }
+
         const $default = {
             'step': 'step_start',
             'from_plugin': {

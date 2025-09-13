@@ -1,19 +1,13 @@
 /**
- Copyright (C) 2010- Peter Lembke, CharZam soft
- the program is distributed under the terms of the GNU General Public License
-
- InfoHub is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
-
- InfoHub is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with InfoHub.  If not, see <https://www.gnu.org/licenses/>.'
+ * charzam_calculate_interest
+ * Render a form for generating interests
+ *
+ * @package     Infohub
+ * @subpackage  charzam_calculate_interest
+ * @since       2024-06-07
+ * @author      Peter Lembke <info@infohub.se>
+ * @license     GPL-3.0-or-later
+ * @copyright   Copyright (C) 2010- Peter Lembke
  */
 function charzam_calculate_interest() {
 
@@ -58,6 +52,31 @@ function charzam_calculate_interest() {
      */
     $functions.push('create');
     const create = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['create'] = {
+                description: 'Get instructions and create the message to InfoHub View',
+                parameters: {
+                    'subtype': {
+                        type: 'string',
+                        default: 'menu',
+                        description: 'Subtype to create'
+                    },
+                    'parent_box_id': {
+                        type: 'string',
+                        default: '',
+                        description: 'Parent box ID'
+                    },
+                    'translations': {
+                        type: 'array',
+                        default: {},
+                        description: 'Translation data'
+                    }
+                }
+            };
+            return [];
+        }
+
         const $default = {
             'subtype': 'menu',
             'parent_box_id': '',
@@ -147,7 +166,7 @@ function charzam_calculate_interest() {
                             'plugin': 'infohub_renderform',
                             'type': 'text',
                             'label': _Translate('MONTHLY_INTEREST_RATE_DECIMAL'),
-                            'description': _Translate('MONTHLY_INTEREST_RATE_DECIMAL_WITH_ALL_DECIMALS_FOR_YOUR_BUGDET'),
+                            'description': _Translate('MONTHLY_INTEREST_RATE_DECIMAL_WITH_ALL_DECIMALS_FOR_YOUR_BUDGET'),
                             'placeholder': _Translate('MONTHLY_INTEREST_RATE_DECIMAL'),
                             'class': 'text',
                             'css_data': {},
@@ -201,6 +220,26 @@ function charzam_calculate_interest() {
      */
     $functions.push('click_handle_interest');
     const click_handle_interest = function($in = {}) {
+
+        if ($isCollectingInformation === true) {
+            $functionInfoLookup['click_handle_interest'] = {
+                description: 'Calculates the monthly interest rate from the yearly interest rate',
+                parameters: {
+                    'form_data': {
+                        type: 'array',
+                        default: {},
+                        description: 'Form data with interest rate'
+                    },
+                    'box_id': {
+                        type: 'string',
+                        default: '',
+                        description: 'The box ID'
+                    }
+                }
+            };
+            return [];
+        }
+
         let $formData = {};
 
         const $default = {
